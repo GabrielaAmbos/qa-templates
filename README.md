@@ -21,24 +21,34 @@ Histório de Alterações:
 #### 1. Objetivo
 Descrever o objetivo dos testes, uma breve descrição das estratégias e critérios utilizados para realizar os testes no sistema xxx. 
 
+##
+
 #### 2. Funcionalidades a serem testadas:
 * [Funcionalidade X]
 * [Funcionalidade Y]
 * [Funcionalidade Z]
+
+##
 
 #### 3. Tipos de Teste: 
 * Teste Funcional
 * Teste de Integração
 * Teste de Regressão
 
+##
+
 #### 4. Ambiente de Teste:
 * URL do sistema: [www.wxyz.com]
 * Sistema operacional: [Windows/Android/iOS]
+
+##
 
 #### 5. Riscos Previstos:
 * Atraso na entrega
 * Falta de acesso ao ambiente
 * Falta de massa de dados
+
+##
 
 #### 6. Cronograma
 

@@ -11,7 +11,7 @@ Padronizar e acelerar a documentação de QA: em vez de começar do zero a cada 
 1. Navegue pelo índice abaixo e abra o template desejado
 2. Copie o arquivo `.md` para o seu projeto (ou para a sua ferramenta, como Confluence, Notion ou Jira)
 3. Substitua os campos entre `[colchetes]` e apague as instruções em *itálico*
-4. Remova seções que não se aplicam — template bom é o que o time realmente preenche
+4. Remova seções que não se aplicam. Template bom é o que o time realmente preenche
 
 ---
 
@@ -64,17 +64,17 @@ Padronizar e acelerar a documentação de QA: em vez de começar do zero a cada 
 
 ## 🔗 Referências oficiais
 
-- [ISTQB](https://istqb.org/) — certificações e [glossário oficial de termos de teste](https://glossary.istqb.org/)
-- [BSTQB](https://bstqb.org.br/) — braço brasileiro do ISTQB, com syllabi traduzidos
-- [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010) — modelo de características de qualidade de software
+- [ISTQB](https://istqb.org/: certificações e [glossário oficial de termos de teste](https://glossary.istqb.org/)
+- [BSTQB](https://bstqb.org.br/): braço brasileiro do ISTQB, com syllabi traduzidos
+- [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010): modelo de características de qualidade de software
 - [WCAG 2.2 (W3C)](https://www.w3.org/WAI/WCAG22/quickref/) — diretrizes de acessibilidade para conteúdo web
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/) — principais riscos de segurança em aplicações web
-- [The Practical Test Pyramid — Martin Fowler](https://martinfowler.com/articles/practical-test-pyramid.html) — estratégia de automação por camadas
-- [Ministry of Testing](https://www.ministryoftesting.com/) — comunidade global de testes de software
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/): principais riscos de segurança em aplicações web
+- [The Practical Test Pyramid — Martin Fowler](https://martinfowler.com/articles/practical-test-pyramid.html): estratégia de automação por camadas
+- [Ministry of Testing](https://www.ministryoftesting.com/): comunidade global de testes de software
 
 ## 🤝 Contribuindo
 
-Sugestões e melhorias são bem-vindas: abra uma issue descrevendo o problema/ideia ou envie um pull request. Ao propor um novo template, siga o padrão dos existentes — instruções de uso no topo, campos em `[colchetes]` e exemplos preenchidos.
+Sugestões e melhorias são bem-vindas: abra uma issue descrevendo o problema/ideia ou envie um pull request. Ao propor um novo template, siga o padrão dos existentes:  instruções de uso no topo, campos em `[colchetes]` e exemplos preenchidos.
 
 ## 📄 Licença
 

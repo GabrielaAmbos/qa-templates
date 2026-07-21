@@ -64,7 +64,7 @@ Padronizar e acelerar a documentação de QA: em vez de começar do zero a cada 
 
 ## 🔗 Referências oficiais
 
-- [ISTQB](https://istqb.org/: certificações e [glossário oficial de termos de teste](https://glossary.istqb.org/)
+- [ISTQB](https://istqb.org/): certificações e [glossário oficial de termos de teste](https://glossary.istqb.org/)
 - [BSTQB](https://bstqb.org.br/): braço brasileiro do ISTQB, com syllabi traduzidos
 - [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010): modelo de características de qualidade de software
 - [WCAG 2.2 (W3C)](https://www.w3.org/WAI/WCAG22/quickref/) — diretrizes de acessibilidade para conteúdo web

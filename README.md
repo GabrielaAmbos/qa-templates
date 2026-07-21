@@ -1,6 +1,6 @@
-# 🎯 QA Templates
+# 📌 QA Templates
 
-Coleção de templates em português para profissionais de qualidade de software — planos de teste, relatórios, checklists e documentos de processo, prontos para copiar e adaptar ao seu projeto.
+Coleção de templates em português para profissionais de qualidade de software, como planos de teste, relatórios, checklists e documentos de processo, prontos para copiar e adaptar ao seu projeto.
 
 ## Objetivo
 
@@ -9,7 +9,7 @@ Padronizar e acelerar a documentação de QA: em vez de começar do zero a cada 
 ## Como usar
 
 1. Navegue pelo índice abaixo e abra o template desejado
-2. Copie o arquivo `.md` para o seu projeto (ou para a sua ferramenta — Confluence, Notion, Jira)
+2. Copie o arquivo `.md` para o seu projeto (ou para a sua ferramenta, como Confluence, Notion ou Jira)
 3. Substitua os campos entre `[colchetes]` e apague as instruções em *itálico*
 4. Remova seções que não se aplicam — template bom é o que o time realmente preenche
 

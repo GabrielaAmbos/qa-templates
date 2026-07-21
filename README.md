@@ -1,196 +1,81 @@
-# 📋 Plano de Teste
+# 🎯 QA Templates
 
-> **Como usar este template:** faça uma cópia deste arquivo, substitua todos os campos entre `[colchetes]` pelas informações do seu projeto e remova as seções que não se aplicam. Os textos em *itálico* são instruções de preenchimento — apague-os na versão final.
+Coleção de templates em português para profissionais de qualidade de software — planos de teste, relatórios, checklists e documentos de processo, prontos para copiar e adaptar ao seu projeto.
 
----
+## Objetivo
 
-## Plano de Testes — [Nome da Funcionalidade]
+Padronizar e acelerar a documentação de QA: em vez de começar do zero a cada projeto, copie o template, substitua os campos entre `[colchetes]` e remova o que não se aplicar. Cada template traz instruções de preenchimento e exemplos práticos.
 
-| Campo | Informação |
-| --- | --- |
-| **Projeto** | [Nome do projeto] |
-| **Funcionalidade** | [Nome da funcionalidade ou épico] |
-| **Responsável de Qualidade** | [Nome do QA] |
-| **Responsável de Desenvolvimento** | [Nome do Dev] |
-| **Product Owner** | [Nome do PO] |
-| **Data de criação** | [DD/MM/AAAA] |
-| **Versão do documento** | [1.0] |
-| **Status** | [Em elaboração / Em revisão / Aprovado] |
+## Como usar
 
-### Histórico de Alterações
-
-| Versão | Data | Autor | Descrição |
-| ------ | ---------- | ------------ | ------------------------ |
-| 1.0 | DD/MM/AAAA | [Nome do QA] | Criação do documento |
+1. Navegue pelo índice abaixo e abra o template desejado
+2. Copie o arquivo `.md` para o seu projeto (ou para a sua ferramenta — Confluence, Notion, Jira)
+3. Substitua os campos entre `[colchetes]` e apague as instruções em *itálico*
+4. Remova seções que não se aplicam — template bom é o que o time realmente preenche
 
 ---
 
-## 1. Objetivo
+## 📚 Índice de Templates
 
-*Descreva em 2–3 frases o que este plano cobre e qual o resultado esperado.*
+### 📄 Documentação de Testes
 
-Ex.: Validar a funcionalidade de [X] do sistema [Y], garantindo que os fluxos principais e alternativos funcionem conforme os critérios de aceite definidos em [link da história/requisito].
-
-**Referências:**
-- História/Requisito: [link para Jira, Azure DevOps, etc.]
-- Protótipo/Design: [link para Figma, etc.]
-- Documentação técnica: [link]
-
----
-
-## 2. Escopo
-
-### 2.1 O que será testado
-
-*Liste as funcionalidades e fluxos cobertos por este plano.*
-
-- [Funcionalidade X — fluxo principal]
-- [Funcionalidade X — fluxos alternativos e de exceção]
-- [Integração com o sistema Y]
-
-### 2.2 O que NÃO será testado (fora de escopo)
-
-*Tão importante quanto o escopo: deixe explícito o que está fora, e por quê.*
-
-- [Funcionalidade Z — será coberta no plano de teste da sprint N]
-- [Teste de carga — sem infraestrutura disponível neste ciclo]
-
----
-
-## 3. Estratégia e Tipos de Teste
-
-*Marque os tipos aplicáveis e descreva brevemente a abordagem de cada um.*
-
-| Tipo de teste | Aplicável? | Abordagem |
-| --- | :---: | --- |
-| Funcional | ☑ | Execução manual dos casos de teste baseados nos critérios de aceite |
-| Regressão | ☑ | Reexecução da suíte [manual/automatizada] dos fluxos impactados |
-| Integração | ☑ | Validação das integrações com [sistema/API X] |
-| API | ☐ | Validação de contratos e respostas via [Postman/Insomnia] |
-| Usabilidade | ☐ | Validação contra o protótipo aprovado no [Figma] |
-| Responsividade / Cross-browser | ☐ | Navegadores: [Chrome, Firefox, Safari]; Resoluções: [desktop, mobile] |
-| Performance | ☐ | [Ferramenta e critério, ex.: k6, resposta < 2s com 100 usuários] |
-| Segurança | ☐ | [Ex.: validação de autenticação/autorização nos endpoints] |
-| Acessibilidade | ☐ | [Ex.: navegação por teclado, leitor de tela, contraste — WCAG AA] |
-
----
-
-## 4. Critérios de Entrada e Saída
-
-### 4.1 Critérios de entrada (para iniciar os testes)
-
-- [ ] Funcionalidade implementada e disponível no ambiente de teste
-- [ ] Critérios de aceite definidos e aprovados
-- [ ] Massa de dados disponível
-- [ ] Acessos e permissões concedidos ao time de QA
-
-### 4.2 Critérios de saída (para encerrar os testes)
-
-- [ ] 100% dos casos de teste executados
-- [ ] Nenhum defeito **crítico** ou **alto** em aberto
-- [ ] Defeitos de severidade média/baixa registrados e priorizados com o PO
-- [ ] Evidências de teste anexadas em [ferramenta]
-
-### 4.3 Critérios de suspensão
-
-*Condições que pausam a execução dos testes.*
-
-- Ambiente de teste indisponível por mais de [X horas]
-- Defeito bloqueador impedindo a execução dos demais casos
-
----
-
-## 5. Casos de Teste
-
-*Liste os casos de teste ou aponte para a ferramenta onde estão gerenciados (TestRail, Qase, Xray, planilha, etc.).*
-
-**Ferramenta de gestão:** [link]
-
-| ID | Cenário | Pré-condição | Passos | Resultado esperado | Prioridade | Status |
-| --- | --- | --- | --- | --- | :---: | :---: |
-| CT-001 | [Login com credenciais válidas] | [Usuário cadastrado e ativo] | [1. Acessar a tela de login<br>2. Informar e-mail e senha válidos<br>3. Clicar em "Entrar"] | [Usuário autenticado e redirecionado para a home] | Alta | ⬜ |
-| CT-002 | [Login com senha inválida] | [Usuário cadastrado] | [1. Informar senha incorreta<br>2. Clicar em "Entrar"] | [Mensagem de erro exibida, sem indicar qual campo está errado] | Alta | ⬜ |
-| CT-003 | [...] | [...] | [...] | [...] | Média | ⬜ |
-
-**Legenda de status:** ⬜ Não executado · ✅ Passou · ❌ Falhou · 🚫 Bloqueado
-
----
-
-## 6. Ambiente de Teste
-
-| Item | Detalhe |
-| --- | --- |
-| **URL do ambiente** | [https://homolog.sistema.com] |
-| **Branch/versão testada** | [ex.: release/1.4.0 — commit abc1234] |
-| **Sistemas operacionais** | [Windows 11, macOS, Android 14, iOS 17] |
-| **Navegadores** | [Chrome 126+, Firefox 127+, Safari 17+] |
-| **Dispositivos** | [Desktop, celular — modelos se relevante] |
-| **Usuários de teste** | [Onde obter: cofre de senhas, planilha X — nunca commitar credenciais] |
-| **Massa de dados** | [Como gerar/obter: script, importação, cadastro manual] |
-
----
-
-## 7. Gestão de Defeitos
-
-- **Ferramenta de registro:** [Jira, Azure DevOps, GitHub Issues]
-- **Template de abertura:** título, passos para reproduzir, resultado esperado × obtido, evidência (print/vídeo), ambiente e versão.
-
-### Classificação de severidade
-
-| Severidade | Definição | SLA de correção |
+| Template | Descrição | Quando usar |
 | --- | --- | --- |
-| 🔴 Crítica | Bloqueia o uso da funcionalidade ou causa perda de dados | [Imediato] |
-| 🟠 Alta | Fluxo principal comprometido, sem alternativa de contorno | [X dias] |
-| 🟡 Média | Fluxo comprometido, mas com alternativa de contorno | [Próxima sprint] |
-| 🟢 Baixa | Problema visual ou de usabilidade sem impacto funcional | [Backlog] |
+| [Plano de Teste](documentacao/plano-de-teste.md) | Planejamento completo: escopo, estratégia, critérios de entrada/saída, riscos e cronograma | No início do ciclo de testes de uma funcionalidade ou release |
+| [Caso de Teste](documentacao/caso-de-teste.md) | Caso individual detalhado: pré-condições, dados, passos e resultados esperados | Para cenários complexos que merecem documentação própria |
+| [Caso de Teste em BDD](documentacao/caso-de-teste-bdd.md) | Cenários em Gherkin (Dado/Quando/Então) com guia de escrita e boas práticas | Para especificar critérios de aceite com PO e Dev, ou preparar automação com Cucumber |
+| [Caso de Teste de API/Integração](documentacao/caso-de-teste-integracao.md) | Teste manual de integração validando API, banco de dados, mensageria, consumidores e logs | Quando a ação testada atravessa várias camadas e sistemas |
+| [Relatório de Bug](documentacao/relatorio-de-bug.md) | Registro de defeito reproduzível: passos, evidências, severidade × prioridade | Sempre que encontrar um defeito |
+| [Relatório de Execução](documentacao/relatorio-de-execucao.md) | Fechamento de ciclo: métricas, defeitos, riscos residuais e parecer final | Ao final de cada sprint, ciclo ou release |
+| [Matriz de Rastreabilidade](documentacao/matriz-rastreabilidade.md) | Mapa requisito → caso de teste → defeito, com visão de cobertura | Para garantir que nenhum requisito ficou sem teste |
+
+### 🏃 Testes Ágeis e Exploratórios
+
+| Template | Descrição | Quando usar |
+| --- | --- | --- |
+| [Charter de Teste Exploratório](ageis/charter-exploratorio.md) | Sessão exploratória com missão, timebox, anotações e debriefing (SBTM) | Para explorar áreas novas ou de risco além dos casos roteirizados |
+| [Definition of Ready & Done](ageis/definition-of-done.md) | Critérios de qualidade para histórias entrarem e saírem da sprint | Ao formar um time novo ou revisar o processo nas retrospectivas |
+
+### ✔️ Checklists Práticos
+
+| Template | Descrição | Quando usar |
+| --- | --- | --- |
+| [Formulários](checklists/formularios.md) | Validações de campos, comportamento, segurança básica e persistência | Em qualquer tela com entrada de dados |
+| [Acessibilidade](checklists/acessibilidade.md) | Teclado, semântica, contraste e leitor de tela, baseado na WCAG 2.2 | Para validar que o produto é utilizável por todas as pessoas |
+| [Segurança Básica](checklists/seguranca-basica.md) | Autenticação, autorização, exposição de dados e entradas maliciosas ao alcance do QA | Em fluxos com login, dados sensíveis ou permissões |
+| [Mobile](checklists/mobile.md) | Interrupções, conectividade, hardware, instalação e matriz de dispositivos | Ao testar apps nativos, híbridos ou web mobile |
+
+### 🤖 Automação
+
+| Template | Descrição | Quando usar |
+| --- | --- | --- |
+| [Plano de Automação](automacao/plano-de-automacao.md) | Estratégia: o que automatizar, pirâmide de testes, ferramentas e métricas | Antes de iniciar (ou reorganizar) a automação do projeto |
+| [Teste de API](automacao/teste-de-api.md) | Especificação por endpoint: contrato, casos de sucesso, erro e borda | Ao testar APIs REST manualmente ou especificar automação |
+
+### ⚙️ Processo e Gestão
+
+| Template | Descrição | Quando usar |
+| --- | --- | --- |
+| [Go/No-Go de Release](processo/go-no-go-release.md) | Checklist de decisão de deploy: qualidade, técnica, operação e rollback | Na reunião de aprovação de cada release |
+| [Post-mortem de Defeito](processo/post-mortem-defeito.md) | Análise blameless de bug em produção: linha do tempo, 5 porquês e ações | Quando um defeito relevante escapa para produção |
+| [Métricas de Qualidade](processo/metricas-de-qualidade.md) | Relatório periódico: taxa de escape, defeitos, execução e automação | Mensalmente ou por sprint, para acompanhar tendências |
 
 ---
 
-## 8. Riscos e Mitigações
+## 🔗 Referências oficiais
 
-*Adapte à realidade do projeto — riscos genéricos ajudam pouco.*
+- [ISTQB](https://istqb.org/) — certificações e [glossário oficial de termos de teste](https://glossary.istqb.org/)
+- [BSTQB](https://bstqb.org.br/) — braço brasileiro do ISTQB, com syllabi traduzidos
+- [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010) — modelo de características de qualidade de software
+- [WCAG 2.2 (W3C)](https://www.w3.org/WAI/WCAG22/quickref/) — diretrizes de acessibilidade para conteúdo web
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/) — principais riscos de segurança em aplicações web
+- [The Practical Test Pyramid — Martin Fowler](https://martinfowler.com/articles/practical-test-pyramid.html) — estratégia de automação por camadas
+- [Ministry of Testing](https://www.ministryoftesting.com/) — comunidade global de testes de software
 
-| Risco | Probabilidade | Impacto | Mitigação |
-| --- | :---: | :---: | --- |
-| Atraso na entrega do desenvolvimento | Média | Alto | Priorizar casos críticos; renegociar prazo com o PO |
-| Ambiente de teste instável | Média | Alto | Acionar [time de infra]; ter ambiente alternativo mapeado |
-| Falta de massa de dados | Baixa | Médio | Preparar scripts de geração de dados antes do início |
-| [Risco específico do projeto] | [...] | [...] | [...] |
+## 🤝 Contribuindo
 
----
+Sugestões e melhorias são bem-vindas: abra uma issue descrevendo o problema/ideia ou envie um pull request. Ao propor um novo template, siga o padrão dos existentes — instruções de uso no topo, campos em `[colchetes]` e exemplos preenchidos.
 
-## 9. Cronograma
+## 📄 Licença
 
-| Atividade | Responsável | Início | Fim | Estimativa |
-| --- | --- | --- | --- | --- |
-| Elaboração do plano de teste | [QA] | [DD/MM] | [DD/MM] | [1 dia] |
-| Criação dos casos de teste | [QA] | [DD/MM] | [DD/MM] | [2 dias] |
-| Preparação de ambiente e massa de dados | [QA/Dev] | [DD/MM] | [DD/MM] | [1 dia] |
-| Execução dos testes | [QA] | [DD/MM] | [DD/MM] | [3 dias] |
-| Reteste de correções | [QA] | [DD/MM] | [DD/MM] | [1 dia] |
-| Relatório final e encerramento | [QA] | [DD/MM] | [DD/MM] | [0,5 dia] |
-
----
-
-## 10. Relatório de Encerramento
-
-*Preencha ao final do ciclo de testes.*
-
-| Métrica | Valor |
-| --- | --- |
-| Casos de teste planejados | [n] |
-| Casos executados | [n] ([%]) |
-| Casos aprovados | [n] ([%]) |
-| Defeitos encontrados | [n] (críticos: [n] · altos: [n] · médios: [n] · baixos: [n]) |
-| Defeitos corrigidos e retestados | [n] |
-
-**Parecer final do QA:** [Aprovado para produção / Aprovado com ressalvas / Reprovado]
-
-**Justificativa:** [...]
-
-### Aprovações
-
-| Papel | Nome | Data | Aprovado? |
-| --- | --- | --- | :---: |
-| QA | [Nome] | [DD/MM/AAAA] | ⬜ |
-| Product Owner | [Nome] | [DD/MM/AAAA] | ⬜ |
+Livre para usar e adaptar nos seus projetos.
